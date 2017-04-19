@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css"/>
+		<style>
+			body{margin: 0 0;
+			padding: 0 0;
+			user-select:none;
+			
+			}
+			
+			
+			#s1{position: absolute;
+			z-index:1;}
+			
+			}
+
+		</style>
+		
+	</head>
+	<body>
+		 <script type="text/javascript" src="js/jquery-1.11.3.js"> </script>
+	 
+	 
+	 
+	 
+	<div class="modal"> 
+	<svg x='0px' y='0px' width="100%" height="100%" id='s1'><div class="modal-dialog">
+			
+		</div>
+	</div></svg>
+	
+	</div>
+	<div  id='msg_board'>
+	<h3>我的留言板</h3>
+	<h4 id='user'>测试</h4>
+	<ul id='msgboard'>
+		<li><b class='number'>序号</b>我的留言板<b class='name'>姓名</b><b class='time'>时间</b></li>
+			
+	</ul>
+		<form>
+		<input type="text" name="msg" id="msg" value="" placeholder="请输入留言内容"  onkeydown="if(event.keyCode==13){return false;}"  />
+		<input type="button" name="sub" id="sub" value="提交" />
+		</form>
+		<div class="roll-wrap roll_row" id="b">
+        <ul class="pager roll__list" style="position: absolute; left: 0; top: 0;">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+            <li>9</li>
+            <li>10</li>
+            <li>11</li>
+        </ul>
+        <a class="control pre" href="javascript:;">&lt;</a>
+        <a class="control next" href="javascript:;">&gt;</a>
+    </div>
+	</div>
+		<script type="text/javascript" src="js/show.js"></script>
+		<script type="text/javascript" src="js/msg_submit.js"></script>
+        <script type="text/javascript" src="js/svg.js"></script>
+        <script type="text/javascript" src="js/login.js"></script>
+        <script type="text/javascript" src="js/rollSlide.js">
+        	
+        </script>
+        <script type="text/javascript">
+        	 $('#b').rollSlide({
+        orientation: 'right',
+        num: 2,
+        v: 1500,
+        space: 3000,
+        isRoll: true
+    });
+        </script>
+    </body>
+</html>

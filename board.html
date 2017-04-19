@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+		<title>zhaolongfei</title>
+
+		<!-- Bootstrap -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+		<style type="text/css">
+			.alert_msg {
+				display: block;
+				width: 100%;
+				height: 34px;
+				padding: 6px 12px;
+				font-size: 14px;
+				line-height: 1.42857143;
+				border: 1px solid #ebccd1;
+				border-radius: 4px;
+				color: #a94442;
+				background-color: #f2dede;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<a href="#" class="navbar-brand">赵龙飞</a>
+					<a href="#nav_top" class="navbar-toggle" data-toggle="collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</a>
+				</div>
+				<div class="collapse navbar-collapse" id="nav_top">
+					<ul class="nav navbar-nav">
+						<li class="active">
+							<a href="">简历</a>
+						</li>
+					</ul>
+					<div class="">
+						<a href="#login_box" class="navbar-right btn btn-success navbar-btn" data-toggle="modal" id="login">登录注册</a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="modal" id="login_box">
+
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<a href="#" class="close" data-dismiss="modal">×</a>
+							<h2 class="modal-title">登录</h2>
+						</div>
+						<div class="modal-body">
+							<form class="form-horizontal">
+								<div class="form-group">
+									<label for="#umane" class="control-label col-xs-2">姓名:</label>
+									<div class="col-xs-6">
+										<input type="text" name="uname" id="uname" placeholder="请输入昵称" class="form-control" />
+									</div>
+									<div class="col-xs-4">
+										<div class="hidden alert_msg"></div>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="#upwd" class="control-label col-xs-2">密码:</label>
+									<div class="col-xs-6">
+										<input type="password" name="upwd" id="upwd" placeholder="请输入密码" class="form-control" />
+									</div>
+
+								</div>
+
+								<div class="form-group">
+									<div class="col-xs-3 col-xs-offset-3">
+										<div class="center-block">
+											<a href="#" class="btn btn-success" id="bt-login">登录</a>
+										</div>
+									</div>
+									<div class="col-xs-3">
+										<div class="center-block">
+											<a href="#" class="btn btn-danger" id="bt-register">注册</a>
+										</div>
+									</div>
+								</div>
+
+							</form>
+
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="panel panel-success">
+						<div class="panel-heading">
+							<h3>留言板<small><span id="username">---赶紧登录留言</span></small></h3>
+						</div>
+						<div class="panel-body" id='msgboard'>
+						</div>
+						<div class="panel-body">
+							<ul class="pagination pager panel-title">
+							</ul>
+						</div>
+						<div class="panel-footer">
+							<div class="input-group">
+								<input type="text" class="form-control" placeholder="留下你的足迹" name="msg" id="msg">
+								<span class="input-group-btn">
+                                <button class="btn btn-default" type="button" name="sub" id="sub">留言</button>
+                                </span>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="js/jquery-1.11.3.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="js/bootstrap.min.js"></script>
+
+		<script type="text/javascript" src="js/show.js"></script>
+		<script type="text/javascript" src="js/msg_submit.js"></script>
+		<script type="text/javascript" src="js/login.js"></script>
+	</body>
+
+</html>
